@@ -1,0 +1,25 @@
+﻿@model List<Model.Legajo>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Alumnos</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="width:100px">Codigo</th>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var a in Model)
+        {
+        <tr>
+            <td>@a.Id</td>
+            <td>@a.Nombre</td>
+            @*<td>@a.Nombre</td>*@
+        </tr>
+        }
+    </tbody>
+</table>
