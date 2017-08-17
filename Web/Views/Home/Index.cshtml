@@ -10,6 +10,7 @@
         <tr>
             <th style="width:100px">Codigo</th>
             <th>Nombre</th>
+            <th style="width:200px;"></th>
         </tr>
     </thead>
     <tbody>
@@ -18,7 +19,15 @@
         <tr>
             <td>@a.Id</td>
             <td>@a.Nombre</td>
-            @*<td>@a.Nombre</td>*@
+            <td class="text-right">
+                <a class="btn btn-default btn-success" href="~/home/ver/@a.Id" title="Visualizar">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                </a> 
+                <a class="btn btn-default" href="~/home/crud/@a.Id" title="Editar">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                </a> 
+              
+            </td>
         </tr>
         }
     </tbody>

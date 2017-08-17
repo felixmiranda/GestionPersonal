@@ -16,5 +16,15 @@ namespace Web.Controllers
 
             return View(legajo.Listar());
         }
+
+        public ActionResult Crud(int id)
+        {
+            return View(legajo.Obtener(id));
+        }
+
+        public ActionResult Ver(int id)
+        {
+            return View(legajo.Obtener(id));
+        }
     }
 }

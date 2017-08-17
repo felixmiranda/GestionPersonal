@@ -126,6 +126,8 @@
     <Content Include="Assets\css\bootstrap-reboot.min.css.map" />
     <Content Include="Assets\css\bootstrap.css.map" />
     <Content Include="Assets\css\bootstrap.min.css.map" />
+    <Content Include="Views\Home\Ver.cshtml" />
+    <Content Include="Views\Home\Crud.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

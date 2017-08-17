@@ -31,9 +31,30 @@ namespace Model
             catch (Exception ex)
             {
 
-                throw;
+                throw new Exception(ex.Message);
             }
             return legajos; 
+        }
+
+        public Legajo Obtener(int id)
+        {
+            var legajo = new Legajo();
+
+            try
+            {
+                using (var context = new GestionPersonalContext())
+                {
+                    legajo = context.Legajo
+                                .Where(x => x.Id == id)
+                                .Single();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+            return legajo;
         }
     }
 }
